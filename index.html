@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./styles/app.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   <title>Document</title>
+</head>
+
+<body>
+   <div class="wrapper">
+      <header class="header-wrapper">
+         <a href="/" title="Banbif" class="logo">
+            <img loading="lazy" width="150" height="30" src="assets/banbif.svg" alt="banbif">
+         </a>
+         <a href="/" class="back text-decoration-none" title="Volver">
+            <span>Volver</span>
+         </a>
+      </header>
+      <main class="main">
+         <aside>
+            <ul class="progress--bar">
+               <li class="progress--bar__item complete">
+                  <div class="number">
+                     <span>1</span>
+                  </div>
+                  <div class="info">
+                     <p class="name">Tus Datos</p>
+                     <span class="text">Verificamos tu identidad</span>
+                  </div>
+               </li>
+               <li class="progress--bar__item">
+                  <div class="number">
+                     <span>2</span>
+                  </div>
+                  <div class="info">
+                     <p class="name">Tu producto </p>
+                     <span class="text">Descubre sus beneficios y promociones</span>
+                  </div>
+               </li>
+               <li class="progress--bar__item">
+                  <div class="number">
+                     <span>3</span>
+                  </div>
+                  <div class="info">
+                     <p class="name">¡Todo listo!</p>
+                  </div>
+               </li>
+            </ul>
+            <div class="card-wrapper">
+               <p class="card-wrapper__text">¡KEVIN Estás cerca de conseguir tu Tarjeta Visa Clásica!</p>
+               <div class="card-wrapper__img">
+                  <img class="" loading="lazy" width="138" height="215" src="/assets/card.png" alt="">
+                  <p>Tienes una tarjeta Visa Clásica con $1,700 de línea.</p>
+               </div>
+
+            </div>
+         </aside>
+         <section class="form-user">
+            <p class="welcome">Hola <span>Kevin</span></p>
+            <p class="text">Por tu seguridad, ayúdanos a verificar tu identidad respondiendo algunas preguntas:</p>
+            <form action="" class="form-user-wrapper">
+               <fieldset>
+                  <div class="field">
+                     <p class="question">1. ¿Tiene o ha tenido algún préstamo con la cooperativa u ONG COOPAC DE LOS
+                        TRABAJADORES DE LA CIA GOODYEAR en los últimos
+                        12 meses?</p>
+                     <div class="control">
+                        <label for="loan">
+                           <input type="radio" id="loan" name="loan" value="Sí">
+                           <span>Sí</span>
+                        </label>
+                        <label for="loan2">
+                           <input type="radio" id="loan2" name="loan" value="No">
+                           <span>No</span>
+                        </label>
+                     </div>
+                  </div>
+                  <div class="field">
+                     <p class="question">2. ¿Cuenta o contó usted con algún periodo omiso en
+                        los últimos 12 meses?</p>
+                     <div class="control">
+                        <label for="period">
+                           <input type="radio" id="period" name="period" value="Sí">
+                           <span>Sí</span>
+                        </label>
+                        <label for="period2">
+                           <input type="radio" id="period2" name="period" value="No">
+                           <span>No</span>
+                        </label>
+                     </div>
+
+                  </div>
+                  <div class="field">
+                     <p class="question">3. ¿Hasta febrero del 2021 cuántas tarjetas de crédito tiene
+                        activa? considere
+                        también las tarjetas de crédito con saldo
+                        cero?</p>
+                     <div class="control">
+                        <select id="credit-card">
+                           <option value="5" selected>5 tarjetas de crédito</option>
+                           <option value="4">4 tarjetas de crédito</option>
+                           <option value="3">3 tarjetas de crédito</option>
+                           <option value="2">2 tarjetas de crédito</option>
+                           <option value="1">1 tarjetas de crédito</option>
+                           <option value="0">Ninguna</option>
+                        </select>
+                     </div>
+
+                  </div>
+                  <div class="field">
+                     <p class="question">4. ¿Su dependencia tributaria pertenece a Lima o
+                        provincia?</p>
+                     <div class="control">
+                        <select id="tax-agency">
+                           <option value="Lima" selected>Lima</option>
+                           <option value="Chincha">Chincha</option>
+                           <option value="Ica">Ica</option>
+                           <option value="Pisco">Pisco</option>
+                        </select>
+                     </div>
+                  </div>
+                  <div class="field">
+                     <p class="question">5. ¿Tiene una nacionalidad aparte de la peruana?</p>
+                     <div class="control">
+                        <label for="nationality">
+                           <input type="radio" id="nationality" name="nationality" value="Sí">
+                           <span>Sí</span>
+                        </label>
+                        <label for="nationality2">
+                           <input type="radio" id="nationality2" name="nationality" value="No">
+                           <span>No</span>
+                        </label>
+                     </div>
+                  </div>
+               </fieldset>
+               <button type="submit" class="next">
+                  Siguiente
+               </button>
+            </form>
+         </section>
+      </main>
+   </div>
+
+   <script src="js/app.js"></script>
+</body>
+
+</html>
