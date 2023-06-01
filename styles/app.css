@@ -69,7 +69,11 @@ ul {
 }
 
 .header-wrapper .logo {
-  width: fit-content;
+  width: 100px;
+}
+
+.header-wrapper .logo img {
+  height: 40px;
 }
 
 .header-wrapper .back {
@@ -245,7 +249,7 @@ aside .progress--bar {
     margin: 20px 0 30px;
   }
 
-  .header-wrapper .logo img {
+  .header-wrapper .logo {
     width: 140px;
     height: 40px;
   }
