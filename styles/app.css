@@ -61,7 +61,7 @@ ul {
 
 .wrapper {
   width: 100%;
-  padding: 0 15px;
+  padding: 0 40px;
   max-width: var(--layout-max-width);
   margin: 0 auto;
 }
@@ -72,7 +72,6 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 15px;
   position: relative;
 }
 
@@ -102,7 +101,6 @@ ul {
 }
 
 main {
-  /* min-height: 800px; */
   display: flex;
   flex-direction: column;
 }
@@ -213,9 +211,6 @@ aside .progress--bar {
 }
 
 /******************************************* FORM *********************************/
-.form-user {
-  padding: 0 15px;
-}
 .form-user .welcome {
   display: none;
 }
@@ -316,11 +311,26 @@ aside .progress--bar {
 }
 
 /* Queries */
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .header-wrapper {
     flex-direction: column;
     align-items: flex-start;
-    margin: 20px 0;
+    margin: 20px 0 30px;
+  }
+
+  .header-wrapper .logo img {
+    width: 140px;
+    height: 40px;
+  }
+
+  .header-wrapper .back {
+    font-size: 16px;
+    padding-left: 20px;
+    margin-top: 40px;
+  }
+
+  .header-wrapper .back::before {
+    left: -5px;
   }
 
   main {
@@ -331,6 +341,7 @@ aside .progress--bar {
   aside {
     align-items: center;
     justify-content: flex-start;
+    width: 28%;
   }
 
   aside .progress--bar {
@@ -339,7 +350,7 @@ aside .progress--bar {
     gap: 40px;
     background-color: var(--color-primary-soft);
     border-radius: 0 0 16px 16px;
-    padding: 20px 0 40px;
+    padding: 20px 0 50px;
   }
 
   .progress--bar .progress--bar__item {
@@ -399,7 +410,7 @@ aside .progress--bar {
     margin: -60px 0 0;
     position: relative;
     z-index: -1;
-    padding: 50px 15px 10px;
+    padding: 50px 20px 10px;
     border-radius: 16px 16px 0 0;
   }
 
@@ -407,8 +418,9 @@ aside .progress--bar {
     display: none;
   }
 
-  .header-wrapper .back {
-    font-size: 20px;
+  .form-user {
+    width: 72%;
+    margin-top: -80px;
   }
 
   .form-user .welcome {
@@ -427,7 +439,7 @@ aside .progress--bar {
   }
 
   .form-user .text {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .form-user .text,
@@ -439,6 +451,7 @@ aside .progress--bar {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    margin-top: 25px;
   }
 
   .form-user-wrapper fieldset {
@@ -446,13 +459,13 @@ aside .progress--bar {
     background-color: var(--color-primary-soft);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 16px;
-    padding: 60px 70px;
+    padding: 50px 60px 30px;
     max-width: 1280px;
   }
 
   .form-user-wrapper .field {
     display: grid;
-    grid-template-columns: 3fr 2fr;
+    grid-template-columns: 2fr 1fr;
     align-items: center;
     gap: 30px;
     position: relative;
