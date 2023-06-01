@@ -13,7 +13,6 @@
   );
   --layout-max-width: 1440px;
   --font-base: 'Roboto';
-  --font-secondary: 'Lato';
 }
 
 *,
@@ -183,7 +182,6 @@ aside .progress--bar {
 
 .card-wrapper {
   margin: 20px 0 40px;
-  padding: 0 30px;
 }
 
 .card-wrapper .card-wrapper__text {
@@ -230,26 +228,26 @@ aside .progress--bar {
   gap: 15px;
 }
 
-.form-user-wrapper .field .question {
+.form-user-wrapper .question {
   color: var(--color-blue-dark);
   font-size: 16px;
 }
 
-.form-user-wrapper .field .control {
+.form-user-wrapper .control {
   display: flex;
   justify-content: space-evenly;
   gap: 5px;
   margin: 25px 0 10px;
 }
 
-.form-user-wrapper .field .control label {
+.form-user-wrapper .control label {
   display: flex;
   align-items: center;
   gap: 10px;
   color: var(--color-primary);
 }
 
-.form-user-wrapper .field .control input {
+.form-user-wrapper .control input {
   appearance: none;
   border-radius: 50%;
   width: 18px;
@@ -258,11 +256,11 @@ aside .progress--bar {
   accent-color: var(--color-primary);
 }
 
-.form-user-wrapper .field .control input:checked {
+.form-user-wrapper .control input:checked {
   background: var(--color-primary);
 }
 
-.form-user-wrapper .field .control input::after {
+.form-user-wrapper .control input::after {
   width: 12px;
   height: 12px;
   position: relative;
@@ -276,13 +274,13 @@ aside .progress--bar {
   transition: transform 0.3s ease;
 }
 
-.form-user-wrapper .field .control input:checked::after {
+.form-user-wrapper .control input:checked::after {
   background: var(--color-white);
   transform: scale(0.7);
   opacity: 1;
 }
 
-.form-user-wrapper .field .control select {
+.form-user-wrapper .control select {
   background-color: var(--color-white);
   border: 1px solid var(--color-primary);
   border-radius: 10px;
@@ -463,7 +461,8 @@ aside .progress--bar {
     max-width: 1280px;
   }
 
-  .form-user-wrapper .field {
+  .form-user-wrapper .field,
+  .form-user-wrapper .field-select {
     display: grid;
     grid-template-columns: 2fr 1fr;
     align-items: center;
@@ -471,7 +470,8 @@ aside .progress--bar {
     position: relative;
   }
 
-  .form-user-wrapper .field::after {
+  .form-user-wrapper .field::after,
+  .form-user-wrapper .field-select::after {
     content: '';
     position: absolute;
     left: 0;
@@ -485,13 +485,13 @@ aside .progress--bar {
     display: none;
   }
 
-  .form-user-wrapper .field .question {
+  .form-user-wrapper .question {
     font-size: 16px;
     line-height: 24px;
     margin-bottom: 0;
   }
 
-  .form-user-wrapper .field .control select {
+  .form-user-wrapper .control select {
     width: 75%;
     padding: 0 20px;
   }
